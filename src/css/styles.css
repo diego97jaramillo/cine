@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+:root {
+    --dark-gray: #333333;
+    --ivoryWhite: #FFFFF0;
+    --gold: #D4AF37;
+    --bourdeux: #800020; 
+}
+
+html { font-size: 62.5% }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Truculenta";
+}
+
+header {
+    background-color: var(--dark-gray);
+}
+
+#navigationBar {
+    margin: 0rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    height: 10rem;
+}
+
+.imgCartel {
+    height: 40rem;
+    width: 30rem;
+}
+
+.imgBg {
+    display: flex;
+    height: 60rem;
+    width: 33rem;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background-color: var(--bourdeux);
+    border-radius: 0.5rem;
+    margin: 1.5rem;
+}
+
+#icons-container {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.headingSection {
+    background-color: var(--dark-gray);
+    text-align: center;
+    border-radius: 5rem;
+    width: 15rem;
+    color: var(--gold);
+    margin: 2rem 5rem;
+}
+
+#cartelera {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+
+h1 {
+    font-size: 4.5rem;
+    color: var(--gold);
+}
+
+.movieHeading{
+    margin: 1rem 1.5rem;
+    align-self: flex-start;
+    padding: 0.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+a {
+    color: var(--gold);
+    font-size: 2.5rem;
+}
+
+i {
+    color: var(--ivoryWhite);
+    font-size: 2.5rem;
+}
+
