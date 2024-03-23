@@ -18,13 +18,15 @@ html { font-size: 62.5% }
 }
 body {
     height: 100vh;
-
     background-color: var(--light-gray);
 }
 
 header {
     background-color: var(--dark-gray);
+    position: sticky;
+    top: 0;
 }
+
 
 #navigationBar {
     margin: 0rem 3rem;
