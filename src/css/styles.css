@@ -166,3 +166,38 @@ footer > p {
     color: var(--ivoryWhite);
     font-size: 1.5rem;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    row-gap: 1rem;
+    margin: 1rem 0;
+}
+
+form input {
+    width: 15rem;
+    color: var(--ivoryWhite);
+    background-color: #333333;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+textarea {
+    color: var(--ivoryWhite);
+    background-color: #333333;
+}
+
+fieldset {
+    font-size: 2rem;
+    width: 30rem;
+    margin:1.5rem auto;
+    border-color: var(--gold);
+    color: var(--ivoryWhite);
+
+}
