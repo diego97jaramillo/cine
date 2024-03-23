@@ -4,7 +4,8 @@
     --dark-gray: #333333;
     --ivoryWhite: #FFFFF0;
     --gold: #D4AF37;
-    --bourdeux: #800020; 
+    --bourdeux: #800020;
+    --light-gray: #6a6a6a;
 }
 
 html { font-size: 62.5% }
@@ -15,13 +16,18 @@ html { font-size: 62.5% }
     box-sizing: border-box;
     font-family: "Truculenta";
 }
+body {
+    height: 100vh;
+
+    background-color: var(--light-gray);
+}
 
 header {
     background-color: var(--dark-gray);
 }
 
 #navigationBar {
-    margin: 0rem 5rem;
+    margin: 0rem 3rem;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -45,6 +51,22 @@ header {
     border-radius: 0.5rem;
     margin: 1.5rem;
 }
+.imgEstreno {
+    height: 55rem;
+    width: 43rem;
+}
+
+.imgBg_new {
+    display: flex;
+    height: 65rem;
+    width: 48rem;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background-color: var(--bourdeux);
+    border-radius: 0.5rem;
+    margin: 1.5rem;
+}
 
 #icons-container {
     display: flex;
@@ -59,16 +81,21 @@ header {
     border-radius: 5rem;
     width: 15rem;
     color: var(--gold);
-    margin: 2rem 5rem;
+    margin: 2rem 3rem;
 }
 
 #cartelera {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
 }
 
+#estrenos {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
 
 h1 {
     font-size: 4.5rem;
@@ -81,16 +108,38 @@ h1 {
     align-self: flex-start;
 }
 
+article > h2 {
+    font-size: 3rem;
+    color: var(--gold);
+    background-color: var(--dark-gray);
+    text-align: center;
+    margin-top: 2rem;
+}
+
 h2 {
     font-size: 2.5rem;
 }
 
-div p { 
-    font-size: 1.4rem;   
+.buybutton {
+    border-radius: 2rem;
+    padding: 0.5rem;
+    background-color: var(--gold);
+    font-size: 2rem;
+    font-weight:900;
+}
+
+div p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    align-self: flex-start;
 }
 
 .movieDescription{
+    height: 17rem;
     padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 a {
@@ -102,4 +151,16 @@ i {
     color: var(--ivoryWhite);
     font-size: 2.5rem;
 }
+footer{
+    background-color: var(--dark-gray);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+footer > p {
+    color: var(--ivoryWhite);
+    font-size: 1.5rem;
+}
